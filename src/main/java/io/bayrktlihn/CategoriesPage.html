@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+
+<wicket:head>
+	<link rel="stylesheet/css" href="categories.css">
+</wicket:head>
+
+</head>
+<body>
+
+	<wicket:extend>
+		<h1>Categories</h1>
+		<table class="table">
+			<tr>
+				<th><span wicket:id="orderByName">Name</span></th>
+				<th>Image</th>
+			</tr>
+
+			<tr wicket:id="categories">
+				<td wicket:id="name">Name</td>
+				<td><img height="70px" wicket:id="image"></td>
+			</tr>
+		</table>
+
+
+		<div class="row button">
+			<div class="col-12">
+				<a wicket:id="newCategory">New Category</a>
+			</div>
+		</div>
+
+		<div wicket:id="feedback"></div>
+
+
+		<form wicket:id="form">
+			<div class="form-group row">
+				<label class="col-3">Name</label> <input class="col-9"
+					wicket:id="name" type="text">
+			</div>
+
+			<div class="form-group row">
+				<label class="col-3">Image-URL</label> <input class="col-9"
+					wicket:id="imageUrl" type="text">
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					<input type="submit" value="Submit">
+				</div>
+			</div>
+		</form>
+
+
+	</wicket:extend>
+
+
+
+
+</body>
+</html>

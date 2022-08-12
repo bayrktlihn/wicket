@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+</head>
+<body>
+	<wicket:extend>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<a wicket:id="back">Back to dashboard</a>
+				</div>
+			</div>
+		</div>
+
+		<wicket:child></wicket:child>
+
+		<ul class="pagination">
+			<li wicket:id="navigator" class="page-item"><a
+				wicket:id="pageLink" href="#" class="page-link"> <span
+					wicket:id="pageNumber"></span>
+			</a></li>
+		</ul>
+
+
+	</wicket:extend>
+</body>
+</html>
